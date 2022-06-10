@@ -24,6 +24,7 @@ body {
   transition-delay: 0s, 0.75s;
   overflow: hidden;
   /* menu öğeleri görünmesin */
+    border-radius: 25px;
 }
 .navigation.active {
   width: 300px;
