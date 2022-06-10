@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>dropdown user account</title>
+  </head>
+  <body>
+    <!-- 
+    thanks to Online Tutorials
+    https://www.youtube.com/c/OnlineTutorials4Designers
+    -->
+    <div class="navigation">
+      <div class="userBx">
+        <div class="imgBx">
+          <img
+            src="https://randomuser.me/api/portraits/men/61.jpg"
+            alt="userImg"
+          />
+        </div>
+        <p class="username">john doe</p>
+      </div>
+      <div class="menuToggle"></div>
+      <ul class="menu">
+        <li>
+          <a href="#"><ion-icon name="person-outline"></ion-icon>my profile</a>
+        </li>
+        <li>
+          <a href="#"
+            ><ion-icon name="chatbubbles-outline"></ion-icon>messages</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><ion-icon name="notifications-outline"></ion-icon>notifications</a
+          >
+        </li>
+        <li>
+          <a href="#"><ion-icon name="settings-outline"></ion-icon>settings</a>
+        </li>
+        <li>
+          <a href="#"
+            ><ion-icon name="help-outline"></ion-icon>help & support</a
+          >
+        </li>
+        <li>
+          <a href="#"><ion-icon name="log-out-outline"></ion-icon>logout</a>
+        </li>
+      </ul>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      let menuToggle = document.querySelector(".menuToggle");
+      let navigation = document.querySelector(".navigation");
+
+      menuToggle.onclick = function () {
+        navigation.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
